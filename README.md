@@ -129,7 +129,7 @@ A clear, friendly entry point explaining the Attention Wallet concept.
 - 📚 **LittleSteps Level 1 (5 to 10Y) **: https://www.dropbox.com/scl/fi/8n4zxdwd5259qmwbornrs/Little-Steps-Level-1-Book.pdf?rlkey=uxl1d1jue9hk8lf31urb47hdk&st=xck5kpyw&dl=0
 - 📚 **LittleSteps Level 1 (5 to 10Y) **: https://www.dropbox.com/scl/fi/uj4b617ycecae4aizawry/Little-Steps-Level-2-Book.pdf?rlkey=clkq9rx3otlwxfoqqdhen9vg4&st=b6fz2u79&dl=0
 - Certificate: https://www.dropbox.com/scl/fi/0xlv3erp4nac1k60kgakr/Vishwa.png?rlkey=l94fzdvm9v84l1mnpatizrbz1&st=cj2f46yr&dl=0
-- 
+- Resourse Folder: https://www.dropbox.com/scl/fo/u7jfiay0nmo7wm0ijumv7/ABUowYlhQ8xvohyrxnWJVuo?rlkey=z0qlv4dv0sahyr6zjr70jex79&e=2&st=eeqa8yg1&dl=0
 ---
 
 
