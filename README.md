@@ -42,7 +42,7 @@ The challenge was to build an **“Attention Wallet”** that:
 
 ---
 
-## Detailed Doc: llliiink.....
+## Detailed Doc: https://www.dropbox.com/scl/fi/u7wccgoychs5j9d4kg9tx/Little-Steps-Detailed-Document.pdf?rlkey=7p3q001xn3dxfm6muwk4kxxdu&st=f80kgq0n&dl=0
 
 
 ## 🔍 My Hackathon Approach
