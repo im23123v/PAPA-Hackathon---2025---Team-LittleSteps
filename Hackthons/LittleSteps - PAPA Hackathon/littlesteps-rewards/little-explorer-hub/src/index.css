@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Playful, kid-friendly color palette */
+    --background: 45 100% 98%;
+    --foreground: 240 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 20% 20%;
+
+    /* Sunny Yellow Primary */
+    --primary: 45 100% 55%;
+    --primary-foreground: 240 20% 15%;
+
+    /* Sky Blue Secondary */
+    --secondary: 200 85% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Soft Lavender Muted */
+    --muted: 270 30% 95%;
+    --muted-foreground: 240 10% 45%;
+
+    /* Coral Accent */
+    --accent: 15 90% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Mint Green for success/badges */
+    --success: 155 70% 50%;
+    --success-foreground: 0 0% 100%;
+
+    /* Purple for magic/special */
+    --magic: 270 70% 60%;
+    --magic-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 30% 88%;
+    --input: 45 30% 88%;
+    --ring: 45 100% 55%;
+
+    --radius: 1rem;
+
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(45, 100%, 95%) 0%, hsl(200, 85%, 95%) 50%, hsl(270, 60%, 95%) 100%);
+    --gradient-card-young: linear-gradient(145deg, hsl(45, 100%, 97%) 0%, hsl(15, 90%, 97%) 100%);
+    --gradient-card-teen: linear-gradient(145deg, hsl(200, 85%, 97%) 0%, hsl(270, 60%, 97%) 100%);
+    --gradient-button: linear-gradient(135deg, hsl(45, 100%, 55%) 0%, hsl(30, 100%, 60%) 100%);
+    --gradient-random: linear-gradient(135deg, hsl(270, 70%, 60%) 0%, hsl(320, 70%, 60%) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 8px 30px -10px hsl(240 20% 20% / 0.1);
+    --shadow-card-hover: 0 20px 40px -15px hsl(240 20% 20% / 0.15);
+    --shadow-button: 0 4px 15px -3px hsl(45 100% 55% / 0.4);
+    --shadow-glow: 0 0 30px hsl(45 100% 55% / 0.3);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 20% 10%;
+    --foreground: 45 30% 95%;
+
+    --card: 240 20% 15%;
+    --card-foreground: 45 30% 95%;
+
+    --popover: 240 20% 15%;
+    --popover-foreground: 45 30% 95%;
+
+    --primary: 45 100% 55%;
+    --primary-foreground: 240 20% 10%;
+
+    --secondary: 200 85% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 15% 20%;
+    --muted-foreground: 45 20% 70%;
+
+    --accent: 15 90% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --success: 155 70% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --magic: 270 70% 55%;
+    --magic-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 15% 25%;
+    --input: 240 15% 25%;
+    --ring: 45 100% 55%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(240, 20%, 12%) 0%, hsl(240, 25%, 15%) 50%, hsl(270, 30%, 15%) 100%);
+    --gradient-card-young: linear-gradient(145deg, hsl(240, 20%, 18%) 0%, hsl(15, 30%, 18%) 100%);
+    --gradient-card-teen: linear-gradient(145deg, hsl(200, 30%, 18%) 0%, hsl(270, 30%, 18%) 100%);
+
+    --shadow-card: 0 8px 30px -10px hsl(0 0% 0% / 0.3);
+    --shadow-card-hover: 0 20px 40px -15px hsl(0 0% 0% / 0.4);
+    --shadow-button: 0 4px 15px -3px hsl(45 100% 55% / 0.3);
+    --shadow-glow: 0 0 30px hsl(45 100% 55% / 0.2);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-card-young {
+    background: var(--gradient-card-young);
+  }
+
+  .gradient-card-teen {
+    background: var(--gradient-card-teen);
+  }
+
+  .gradient-button {
+    background: var(--gradient-button);
+  }
+
+  .gradient-random {
+    background: var(--gradient-random);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .shadow-button {
+    box-shadow: var(--shadow-button);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+  }
+
+  .animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}

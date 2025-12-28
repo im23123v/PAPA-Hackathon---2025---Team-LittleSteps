@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Playful, kid-friendly color palette */
+    --background: 45 40% 98%;
+    --foreground: 220 25% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 20%;
+
+    /* Vibrant teal - learning & growth */
+    --primary: 174 72% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm orange - rewards & achievements */
+    --secondary: 32 95% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Soft lavender - badges & special */
+    --accent: 270 60% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 45 20% 92%;
+    --muted-foreground: 220 15% 50%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 174 72% 45%;
+
+    --radius: 1rem;
+
+    /* Custom colors for gamification */
+    --coin: 45 100% 50%;
+    --coin-glow: 45 100% 70%;
+    --success: 145 70% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Age group colors */
+    --age-young: 340 80% 60%;
+    --age-young-light: 340 80% 95%;
+    --age-teen: 220 80% 55%;
+    --age-teen-light: 220 80% 95%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(174 72% 45%), hsl(190 80% 50%), hsl(220 70% 55%));
+    --gradient-coin: linear-gradient(135deg, hsl(45 100% 50%), hsl(35 100% 60%));
+    --gradient-badge: linear-gradient(135deg, hsl(270 60% 65%), hsl(300 70% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(45 40% 98%));
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px -2px hsl(220 25% 20% / 0.08);
+    --shadow-md: 0 8px 24px -8px hsl(220 25% 20% / 0.12);
+    --shadow-lg: 0 16px 48px -16px hsl(220 25% 20% / 0.15);
+    --shadow-glow: 0 0 30px hsl(174 72% 45% / 0.3);
+    --shadow-coin: 0 4px 20px hsl(45 100% 50% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 25% 10%;
+    --foreground: 45 20% 95%;
+
+    --card: 220 25% 14%;
+    --card-foreground: 45 20% 95%;
+
+    --popover: 220 25% 14%;
+    --popover-foreground: 45 20% 95%;
+
+    --primary: 174 72% 50%;
+    --primary-foreground: 220 25% 10%;
+
+    --secondary: 32 95% 55%;
+    --secondary-foreground: 220 25% 10%;
+
+    --accent: 270 60% 65%;
+    --accent-foreground: 220 25% 10%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 45 15% 60%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 174 72% 50%;
+
+    --sidebar-background: 220 25% 12%;
+    --sidebar-foreground: 45 20% 95%;
+    --sidebar-primary: 174 72% 50%;
+    --sidebar-primary-foreground: 220 25% 10%;
+    --sidebar-accent: 220 20% 18%;
+    --sidebar-accent-foreground: 45 20% 95%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 174 72% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+  }
+}
+
+@layer components {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-coin {
+    background: var(--gradient-coin);
+  }
+
+  .gradient-badge {
+    background: var(--gradient-badge);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-coin {
+    box-shadow: var(--shadow-coin);
+  }
+
+  .text-gradient {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(45 100% 50% / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(45 100% 50% / 0.6);
+    }
+  }
+}
