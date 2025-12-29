@@ -1,6 +1,6 @@
 # 🎯 LittleSteps – Building Mindful Digital Habits
 
-> **PAPA Community Hackathon | 24-Hour Solo Hackathon Project**
+> **PAPA Community Hackathon | 24-Hour Hackathon Project**
 
 ---
 
